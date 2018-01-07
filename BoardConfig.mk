@@ -54,6 +54,8 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/treltexx/bootimg.mk
+
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
