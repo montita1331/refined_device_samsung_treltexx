@@ -1,4 +1,3 @@
-USE_CAMERA_STUB := true
 DEVICE_TREE := device/samsung/treltexx
 
 # Platform
@@ -7,12 +6,7 @@ BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOARD_PLATFORM_GPU := mali-t760mp6
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := universal5433
-
-# Flags
-TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
-COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60 -DQCOM_HARDWARE
+TARGET_BOOTLOADER_BOARD_NAME := universal5433	
 
 # Architecture
 TARGET_ARCH := arm
@@ -68,7 +62,6 @@ TW_DEFAULT_BRIGHTNESS := 162
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_MTP_DEVICE := "/dev/mtp_usb"
-TW_EXCLUDE_SUPERSU := true
 TW_INCLUDE_NTFS_3G := true
 TW_EXTRA_LANGUAGES := true
 TW_USE_NEW_MINADBD := true
